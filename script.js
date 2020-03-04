@@ -12,6 +12,8 @@ function Add1() {
 
             outp.appendChild(outpmaster);       
             convers.appendChild(outp);
+            convers.scrollBy(0, 100000); // scroll bar auto down (x=0 ,y=Max)
+            document.getElementById("send_text").value = ""; // Pour
 }
 
 //function2 (user2)
@@ -27,9 +29,13 @@ function Add2() {
         var outpmaster = document.createTextNode(message.value);
 
         outp.appendChild(outpmaster);       
-        convers.appendChild(outp);       
+        convers.appendChild(outp);  
+        convers.scrollBy(0, 100000);   // scroll bar auto down (x=0 ,y=Max)
+        document.getElementById("send_text").value = "";
     
 }
+
+
 
 //Time
 
